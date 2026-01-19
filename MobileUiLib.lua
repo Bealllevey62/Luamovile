@@ -27,10 +27,10 @@ print("Platform: " .. (IS_MOBILE and "MOBILE" .. (IS_IOS and " (iOS)" or " (Andr
 local success, Library = pcall(function()
     if IS_MOBILE then
         -- Mobile-optimized GUI
-        return loadstring(game:HttpGet("https://raw.githubusercontent.com/xatanical/clover/main/MobileUiLib.lua"))()
+        return loadstring(game:HttpGet("https://raw.githubusercontent.com/xatanical/Luamovile/main/MobileUiLib.lua"))()
     else
         -- Standard GUI for PC
-        return loadstring(game:HttpGet("https://raw.githubusercontent.com/xatanical/clover/main/UiLib.lua"))()
+        return loadstring(game:HttpGet("https://raw.githubusercontent.com/xatanical/Luamovile/main/UiLib.lua"))()
     end
 end)
 
